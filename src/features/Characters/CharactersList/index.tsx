@@ -4,7 +4,7 @@ import {
   type EdgeInsets,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
-import {type Character} from 'services/api';
+import {type Character} from '@services/api';
 import {useGetCharactersList} from './hooks';
 import CharacterCard from './components/CharacterCard';
 import CharacterSeparator from './components/CharacterSeparator';

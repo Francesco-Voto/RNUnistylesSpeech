@@ -3,7 +3,7 @@ import {
   getCharacter,
   getCharacterUrl,
   getEpisode,
-} from 'services/api';
+} from '@services/api';
 import useSWR from 'swr';
 
 export function useGetCharacter(id?: number) {

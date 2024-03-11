@@ -1,4 +1,4 @@
-import {getCharactersKey, getCharacters, type Character} from 'services/api';
+import {getCharactersKey, getCharacters, type Character} from '@services/api';
 import useSWRInfinite from 'swr/infinite';
 
 export function useGetCharactersList() {

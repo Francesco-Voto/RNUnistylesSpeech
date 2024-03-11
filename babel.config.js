@@ -4,7 +4,11 @@ module.exports = {
     [
       'module-resolver',
       {
-        root: ['./src'],
+        alias: {
+          '@features': './src/features',
+          '@services': './src/services',
+          '@types': './src/types',
+        },
       },
     ],
   ],

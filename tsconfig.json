@@ -4,8 +4,8 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "services/*": ["src/services/*"],
-      "types/*": ["src/types/*"],
+      "@services/*": ["src/services/*"],
+      "@types/*": ["src/types/*"],
     }                     
   }
 }
