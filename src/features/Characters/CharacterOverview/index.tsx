@@ -99,7 +99,9 @@ const generateStyles = ({top}: EdgeInsets) =>
     headerButtonText: {
       fontWeight: '600',
       fontSize: 32,
+      lineHeight: 32,
       color: 'green',
+      textAlignVertical: 'center',
     },
     favourtieButton: {
       position: 'absolute',
