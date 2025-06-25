@@ -8329,6 +8329,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-edge-to-edge@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "react-native-edge-to-edge@npm:1.6.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 9f0ad97cef8a0c1392ea6ba368fc2d12c141700f04c665233aab955a12da35bbfda504c6bf91f8d5cf8d172479018248e936909108d326f971e69f6fddb89917
+  languageName: node
+  linkType: hard
+
 "react-native-error-boundary@npm:^2.0.0":
   version: 2.0.0
   resolution: "react-native-error-boundary@npm:2.0.0"
@@ -8363,6 +8373,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-nitro-modules@npm:^0.26.2":
+  version: 0.26.2
+  resolution: "react-native-nitro-modules@npm:0.26.2"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 957b7dae77102f44d5a26d65b665193de510eb5cfefc0417ffdcd5b2357994122f6384296c3ed3d2ce51166769c66457d77c39e62ce6aafa37dcf55fee7f4b5a
+  languageName: node
+  linkType: hard
+
 "react-native-safe-area-context@npm:^5.5.0":
   version: 5.5.0
   resolution: "react-native-safe-area-context@npm:5.5.0"
@@ -8384,6 +8404,23 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 22d3c302ef90a1cb20eed8c130b32e53d49288a19eba844f506a5e38342ef2add0d4f7a2ff5501cc05052aef6bf7f180db26a067b01f70f3cc12d3e1497329d6
+  languageName: node
+  linkType: hard
+
+"react-native-unistyles@npm:next":
+  version: 3.0.0-rc.5
+  resolution: "react-native-unistyles@npm:3.0.0-rc.5"
+  peerDependencies:
+    "@react-native/normalize-colors": "*"
+    react: "*"
+    react-native: ">=0.76.0"
+    react-native-edge-to-edge: "*"
+    react-native-nitro-modules: "*"
+    react-native-reanimated: "*"
+  peerDependenciesMeta:
+    react-native-reanimated:
+      optional: true
+  checksum: 0f61c82bab084989a0a904d02e1b575cbf98e439e30af282f8c9044bbfaca42fec918c48075897d2ace06bb59eae423be389992773ea769fdc3b7c721a7e4933
   languageName: node
   linkType: hard
 
@@ -8777,10 +8814,13 @@ __metadata:
     prettier: 2.8.8
     react: 19.0.0
     react-native: 0.79.4
+    react-native-edge-to-edge: ^1.6.1
     react-native-error-boundary: ^2.0.0
     react-native-mmkv: ^3.3.0
+    react-native-nitro-modules: ^0.26.2
     react-native-safe-area-context: ^5.5.0
     react-native-screens: ^4.11.1
+    react-native-unistyles: next
     react-test-renderer: 18.2.0
     swr: ^2.3.3
     typescript: 5.0.4
