@@ -30,7 +30,7 @@ const CharacterCard: FC<Props> = ({character}) => {
   );
 };
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create(theme => ({
   cardRoot: {
     borderRadius: 8,
     overflow: 'hidden',
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     padding: 8,
-    backgroundColor: 'white',
+    backgroundColor: theme.colors.secondary,
   },
   name: {
     fontSize: 24,
@@ -56,6 +56,6 @@ const styles = StyleSheet.create({
   secondaryInfo: {
     fontSize: 16,
   },
-});
+}));
 
 export default memo(CharacterCard);

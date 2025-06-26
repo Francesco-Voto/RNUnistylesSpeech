@@ -67,16 +67,16 @@ const CharacterOverviewComponent = () => {
   );
 };
 
-const styles = StyleSheet.create((_, rt) => ({
+const styles = StyleSheet.create((theme, rt) => ({
   root: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: theme.colors.secondary,
   },
   backButton: {
     position: 'absolute',
     left: 16,
     top: rt.insets.top + 16,
-    backgroundColor: 'white',
+    backgroundColor: theme.colors.secondary,
     borderRadius: 24,
     height: 48,
     width: 48,
@@ -86,15 +86,14 @@ const styles = StyleSheet.create((_, rt) => ({
   headerButtonText: {
     fontWeight: '600',
     fontSize: 32,
-    lineHeight: 32,
-    color: 'green',
+    color: theme.colors.primary,
     textAlignVertical: 'center',
   },
   favourtieButton: {
     position: 'absolute',
     right: 16,
     top: rt.insets.top + 16,
-    backgroundColor: 'white',
+    backgroundColor: theme.colors.secondary,
     borderRadius: 24,
     height: 48,
     width: 48,
@@ -110,7 +109,7 @@ const styles = StyleSheet.create((_, rt) => ({
   },
   name: {
     fontSize: 32,
-    color: 'grey',
+    color: theme.colors.tertiary,
   },
   secondaryInfoContainer: {
     flexDirection: 'row',
@@ -120,7 +119,7 @@ const styles = StyleSheet.create((_, rt) => ({
   },
   secondaryInfo: {
     fontSize: 24,
-    color: 'grey',
+    color: theme.colors.tertiary,
   },
   episodesContainer: {
     borderTopWidth: 1,
@@ -129,7 +128,7 @@ const styles = StyleSheet.create((_, rt) => ({
   },
   episodesTitle: {
     fontSize: 16,
-    color: 'grey',
+    color: theme.colors.tertiary,
     marginTop: 8,
     marginBottom: 16,
   },

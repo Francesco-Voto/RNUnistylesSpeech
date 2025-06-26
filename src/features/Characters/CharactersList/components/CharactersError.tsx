@@ -9,23 +9,23 @@ const CharactersError = () => (
   </View>
 );
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create(theme => ({
   root: {
     flex: 1,
-    backgroundColor: 'green',
+    backgroundColor: theme.colors.primary,
     justifyContent: 'center',
     alignItems: 'center',
   },
   title: {
-    color: 'white',
+    color: theme.colors.secondary,
     marginBottom: 8,
     fontSize: 24,
     fontWeight: 'bold',
   },
   subtitle: {
-    color: 'white',
+    color: theme.colors.secondary,
     fontSize: 16,
   },
-});
+}));
 
 export default memo(CharactersError);

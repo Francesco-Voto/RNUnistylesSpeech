@@ -7,13 +7,13 @@ const CharactersLoading = () => (
   </View>
 );
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create(theme => ({
   root: {
     flex: 1,
-    backgroundColor: 'green',
+    backgroundColor: theme.colors.primary,
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+}));
 
 export default CharactersLoading;

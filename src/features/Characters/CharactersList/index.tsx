@@ -39,14 +39,14 @@ const CharactersListComponent: FC = () => {
   );
 };
 
-const styles = StyleSheet.create((_, rt) => ({
+const styles = StyleSheet.create((theme, rt) => ({
   contentContainer: {
     paddingHorizontal: 8,
     paddingTop: rt.insets.top + 8,
     paddingBottom: rt.insets.bottom,
   },
   root: {
-    backgroundColor: 'green',
+    backgroundColor: theme.colors.primary,
   },
 }));
 
