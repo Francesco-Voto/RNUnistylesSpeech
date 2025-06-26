@@ -1,3 +1,4 @@
+import './theme';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {enableFreeze, enableScreens} from 'react-native-screens';
 import {NavigationContainer} from '@react-navigation/native';

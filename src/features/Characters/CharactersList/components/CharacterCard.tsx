@@ -1,6 +1,7 @@
 import {FC, memo} from 'react';
 import {Character} from 'services/apiClient';
-import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
+import {Image, Pressable, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native-unistyles';
 import {useNavigation} from '@react-navigation/native';
 import {CharactersListNavigationProp} from '../navigation';
 

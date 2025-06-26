@@ -1,5 +1,6 @@
 import {memo} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
+import {StyleSheet} from 'react-native-unistyles';
 
 const CharactersError = () => (
   <View style={styles.root} testID="characters-error">

@@ -80,7 +80,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.25.2":
+"@babel/core@npm:^7.25.2, @babel/core@npm:^7.27.4":
   version: 7.27.4
   resolution: "@babel/core@npm:7.27.4"
   dependencies:
@@ -1520,7 +1520,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.25.3":
+"@babel/preset-env@npm:^7.27.2":
   version: 7.27.2
   resolution: "@babel/preset-env@npm:7.27.2"
   dependencies:
@@ -1619,7 +1619,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.25.0":
+"@babel/runtime@npm:^7.25.0, @babel/runtime@npm:^7.27.6":
   version: 7.27.6
   resolution: "@babel/runtime@npm:7.27.6"
   checksum: 3f7b879df1823c0926bd5dbc941c62f5d60faa790c1aab9758c04799e1f04ee8d93553be9ec059d4e5882f19fe03cbe8933ee4f46212dced0f6d8205992c9c9a
@@ -8407,7 +8407,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-unistyles@npm:next":
+"react-native-unistyles@npm:3.0.0-rc.5":
   version: 3.0.0-rc.5
   resolution: "react-native-unistyles@npm:3.0.0-rc.5"
   peerDependencies:
@@ -8791,9 +8791,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rn-app-security-checks@workspace:."
   dependencies:
-    "@babel/core": ^7.25.2
-    "@babel/preset-env": ^7.25.3
-    "@babel/runtime": ^7.25.0
+    "@babel/core": ^7.27.4
+    "@babel/preset-env": ^7.27.2
+    "@babel/runtime": ^7.27.6
     "@react-native-community/cli": 18.0.0
     "@react-native-community/cli-platform-android": 18.0.0
     "@react-native-community/cli-platform-ios": 18.0.0
@@ -8820,7 +8820,7 @@ __metadata:
     react-native-nitro-modules: ^0.26.2
     react-native-safe-area-context: ^5.5.0
     react-native-screens: ^4.11.1
-    react-native-unistyles: next
+    react-native-unistyles: 3.0.0-rc.5
     react-test-renderer: 18.2.0
     swr: ^2.3.3
     typescript: 5.0.4

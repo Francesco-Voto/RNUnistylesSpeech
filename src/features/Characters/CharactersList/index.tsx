@@ -1,9 +1,6 @@
-import {type FC, Suspense, useCallback, useMemo} from 'react';
-import {FlatList, StyleSheet} from 'react-native';
-import {
-  type EdgeInsets,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+import {type FC, Suspense, useCallback} from 'react';
+import {FlatList} from 'react-native';
+import {StyleSheet} from 'react-native-unistyles';
 import {type Character} from '@services/api';
 import {useGetCharactersList} from './hooks';
 import CharacterCard from './components/CharacterCard';
@@ -22,10 +19,6 @@ function renderItem({item}: {item: Character}) {
 
 const CharactersListComponent: FC = () => {
   const {data, setSize} = useGetCharactersList();
-
-  const edgeInsets = useSafeAreaInsets();
-
-  const styles = useMemo(() => generateStyles(edgeInsets), [edgeInsets]);
 
   const onEndReached = useCallback(() => {
     setSize(size => size + 1);
@@ -46,17 +39,16 @@ const CharactersListComponent: FC = () => {
   );
 };
 
-const generateStyles = ({top, bottom}: EdgeInsets) =>
-  StyleSheet.create({
-    contentContainer: {
-      paddingHorizontal: 8,
-      paddingTop: top + 8,
-      paddingBottom: bottom,
-    },
-    root: {
-      backgroundColor: 'green',
-    },
-  });
+const styles = StyleSheet.create((_, rt) => ({
+  contentContainer: {
+    paddingHorizontal: 8,
+    paddingTop: rt.insets.top + 8,
+    paddingBottom: rt.insets.bottom,
+  },
+  root: {
+    backgroundColor: 'green',
+  },
+}));
 
 const CharactersList = () => (
   <ErrorBoundary FallbackComponent={CharactersError}>

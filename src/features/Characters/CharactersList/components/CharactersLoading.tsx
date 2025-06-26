@@ -1,4 +1,5 @@
-import {ActivityIndicator, StyleSheet, View} from 'react-native';
+import {ActivityIndicator, View} from 'react-native';
+import {StyleSheet} from 'react-native-unistyles';
 
 const CharactersLoading = () => (
   <View style={styles.root}>

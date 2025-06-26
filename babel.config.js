@@ -1,9 +1,6 @@
 
-module.exports = function (api) {
-  api.cache(true);
-
-  return {
-    presets: ['module:@react-native/babel-preset'],
+module.exports = {
+  presets: ['module:@react-native/babel-preset'],
     plugins: [
           [
       'module-resolver',
@@ -15,10 +12,8 @@ module.exports = function (api) {
         },
       },
     ],
-        ['react-native-unistyles/plugin', {
-            root: 'src',
-        }],
-    ],
-  };
+    ['react-native-unistyles/plugin', {
+        root: 'src',
+    }],
+  ],
 };
-

@@ -1,6 +1,7 @@
 import {type FC, Suspense, memo} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 import ErrorBoundary from 'react-native-error-boundary';
+import {StyleSheet} from 'react-native-unistyles';
 import {useGetEpisode} from '../hooks';
 
 interface Props {
