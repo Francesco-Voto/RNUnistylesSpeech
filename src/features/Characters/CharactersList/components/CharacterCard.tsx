@@ -1,9 +1,9 @@
-import {FC, memo} from 'react';
-import {Character} from 'services/apiClient';
+import {type FC, memo} from 'react';
+import {type Character} from '@services/api';
 import {Image, Pressable, Text, View} from 'react-native';
 import {StyleSheet} from 'react-native-unistyles';
 import {useNavigation} from '@react-navigation/native';
-import {CharactersListNavigationProp} from '../navigation';
+import {type CharactersListNavigationProp} from '../../navigation';
 
 interface Props {
   character: Character;
